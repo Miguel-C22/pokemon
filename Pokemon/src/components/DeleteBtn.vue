@@ -14,7 +14,7 @@ const props = defineProps({
 const removePokemon = async () => {
     console.log(props.id)
     try {
-        const res = await fetch(`http://localhost:3008/api/v1/pokemon/removePokemon/${props.id}`, {
+        const res = await fetch(`https://pokemon-chi-smoky.vercel.app/api/v1/pokemon/removePokemon/${props.id}`, {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json',

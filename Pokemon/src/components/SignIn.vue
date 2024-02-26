@@ -13,7 +13,7 @@ const createAccount = async () => {
     const info = {email: userInfo.email, password: userInfo.password}
     console.log(info)
     try {
-        const res = await fetch("http://localhost:3008/api/v1/auth/login", {
+        const res = await fetch("https://pokemon-chi-smoky.vercel.app/api/v1/auth/login", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

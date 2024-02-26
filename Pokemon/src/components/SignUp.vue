@@ -15,7 +15,7 @@ const createAccount = async () => {
     console.log(info)
     if(userInfo.password === userInfo.confirmPass){
       try {
-        const res = await fetch("http://localhost:3008/api/v1/auth/register", {
+        const res = await fetch("https://pokemon-chi-smoky.vercel.app/api/v1/auth/register", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

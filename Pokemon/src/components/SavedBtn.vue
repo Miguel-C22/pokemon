@@ -15,7 +15,7 @@ const addPokemon = async (pokemon) => {
     const savedPokemon = {url: pokemon.url, name: pokemon.name, email: signedInEmail._value}
 
     try {
-        const res = await fetch("http://localhost:3008/api/v1/pokemon/addPokemon", {
+        const res = await fetch("https://pokemon-chi-smoky.vercel.app/api/v1/pokemon/addPokemon", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

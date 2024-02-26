@@ -23,7 +23,7 @@ returning an empty array if there's no user.
 
 const getAllPokemon = async () => {
     try {
-        const res = await fetch("http://localhost:3008/api/v1/pokemon/allPokemon", {
+        const res = await fetch("https://pokemon-chi-smoky.vercel.app/api/v1/pokemon/allPokemon", {
             method: "GET",
             headers: {
                 'Content-Type': 'application/json',
